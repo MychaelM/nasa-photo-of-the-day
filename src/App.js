@@ -3,6 +3,7 @@ import "./App.css";
 import Header from './components/Header';
 
 import axios from "axios";
+import PicOfDay from "./components/PicOfDay";
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
 
 useEffect(() => {
   axios
-    .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+    .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14`)
     .then((res) => {
       console.log(res.data);
       console.log(res.data.title);
@@ -25,6 +26,7 @@ useEffect(() => {
     <div className="App">
       {/* {console.log(data.title)} */}
       <Header data={data}/>
+      <PicOfDay data={data} />
       {/* <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
