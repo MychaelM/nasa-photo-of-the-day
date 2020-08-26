@@ -16,7 +16,7 @@ return (
   //   )}
   // </div>
   <header>
-    <h1>{props.data.title}</h1>
+    <h1>NASA Pic Of The Day</h1>
   </header>
 );
 }

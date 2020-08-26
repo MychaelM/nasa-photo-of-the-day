@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import axios from "axios";
 import PicOfDay from "./components/PicOfDay";
-import PicDescription from './components/PicDescription';
 
 function App() {
 
@@ -28,7 +27,6 @@ useEffect(() => {
       {/* {console.log(data.title)} */}
       <Header data={data}/>
       <PicOfDay data={data} />
-      <PicDescription data={data} />
       <Footer />
       {/* <p>
         Read through the instructions in the README.md file to build your NASA
