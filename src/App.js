@@ -25,8 +25,8 @@ useEffect(() => {
   return (
     <div className="App">
       {/* {console.log(data.title)} */}
-      <Header data={data}/>
-      <PicOfDay data={data} />
+      <Header />
+      <PicOfDay data={data} /> 
       <Footer />
       {/* <p>
         Read through the instructions in the README.md file to build your NASA

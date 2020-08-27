@@ -1,8 +1,10 @@
 import React from 'react';
 // import App from "./App.js";
 
-export default function Header(props) {
-  console.log(props);
+import {Head} from '../styled-components/Head';
+
+export default function Header() {
+  // console.log(props);
 return (
   // <div>
   //   {!props.title ? (
@@ -15,8 +17,8 @@ return (
   //     </header>
   //   )}
   // </div>
-  <header>
+  <Head>
     <h1>NASA Pic Of The Day</h1>
-  </header>
+  </Head>
 );
 }
