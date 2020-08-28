@@ -1,11 +1,12 @@
 import React from "react";
+import { Pic, ContainerDiv } from '../styled-components/Pic';
 
 export default function PicOfDay(props) {
   return (
-    <div>
-      <img src={props.data.url} alt={props.data.title} />
+    <ContainerDiv>
+      <Pic src={props.data.url} alt={props.data.title} />
       <h3>{props.data.title}</h3>
       <p>{props.data.explanation}</p>
-    </div>
+    </ContainerDiv>
   );
 }
